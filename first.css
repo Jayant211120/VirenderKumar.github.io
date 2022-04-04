@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+}
+#container{
+    display: flex;
+    text-align: center;
+    flex-direction: row-reverse;
+}
+#container{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('front.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.image{
+    height: 90px;
+    padding-right:750px;
+}
+#container ul{
+    display: flex;
+}
+#container ul li{
+    padding:12px;
+    display: block;
+    margin-top:12px;
+}
+#container ul li a{
+    text-decoration: none;
+    color:black;
+}
+#container ul li::after{
+content: "";
+background: rgb(199, 75, 75);
+display: block;
+width:0%;
+height:1%;
+margin:auto;
+transition: 0.5s;
+}
+#container ul li:hover::after{
+    width:100%;
+}
+#paragraph{
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    justify-content: center; 
+}
+.heading1{
+    font: 45px solid black;
+    margin-top: 42px;
+}
+.head{
+    font:25px solid black;
+    justify-content: center;
+    text-align: center;
+    margin:23px;
+}
+.content1{
+    box-sizing: border-box;
+    flex-basis: 29%;
+    color:black;
+    background-color:pink;
+    border:3px solid grey;
+    margin:13px; 
+    padding:14px; 
+    width: 192px;
+    transition: 0.5s;
+}
+/* @media screen and(max-width:600px){
+    .content1{
+        display: block;
+        background-color:green;
+        
+    }
+} */
+.content1 a{
+    text-decoration: none;
+    color:black;
+}
+#paragraph{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    /* flex-wrap: wrap; */
+}
+.content1:hover{
+    /* box-shadow:0 0 20px 0px rgba(0,0,0,0.2) ; */
+    background-color:rgb(218, 201, 204);
+    box-shadow: 6px 6px rgb(216, 132, 146);
+}
+.video1{
+    font:25px solid black;
+    justify-content: center;
+    text-align: center;
+   
+}
+.videos{
+    justify-content: center;
+    text-align: center;
+    /* margin:a; */
+    
+}
+.lasthead{
+    font:25px solid black;
+    margin-top:32px;
+    justify-content: center;
+    text-align: center;
+}
+#last{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top:20px;
+}
+.icon{
+    padding:0 20px;
+}
+/* .firstly{
+    animation-name: Jayant;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes Jayant {
+    0%{
+        left:20px;
+    }
+    100%{
+      left:100%;  
+    }
+} */
+#animation{
+     text-align: center; 
+    justify-content: center; 
+    margin-left:620px;
+    margin-bottom: 20px;
+    margin-top:20px;
+    transform: skew(50deg);
+    transform: translate(X);
+}
+#animation p{
+    display: flex;
+    flex-direction: column-reverse;
+    box-sizing: border-box;
+    border:7px;
+    height: 30px;
+    width:130px;
+    color:white;
+    background-color:black;
+    animation-duration:1s;
+    animation-name: Jayant;
+    animation-iteration-count: infinite;
+}
+@keyframes Jayant{
+    from{
+    left: 10px;
+    }
+    to{
+        left: 100px;
+    }
+}
